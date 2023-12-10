@@ -1,0 +1,184 @@
+html,
+body {
+  width: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+  font-family: "Hind Vadodara";
+  background-color: #f4f7fc;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 6.9333rem;
+  background-color: #153d75;
+}
+.wrapper .sidebar {
+  flex: 0 0 6.6667rem;
+  min-width: 6.6667rem;
+  max-width: 6.6667rem;
+  height: 100vh;
+  z-index: 10;
+}
+.wrapper .main {
+  flex: 1;
+}
+
+.sidebar .bar_logo {
+  display: block;
+  width: 100%;
+  height: 1.7333rem;
+  background: url(../images/logo4.png) no-repeat center;
+  background-size: 1.7333rem;
+  background-position: 20% center;
+}
+.sidebar .bar_content {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.sidebar .bar_user {
+  display: flex;
+  padding: 0.5333rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 4.2133rem;
+  color: rgb(21, 61, 119);
+}
+.sidebar .bar_user .user_avatar {
+  width: 1.7333rem;
+  height: 1.7333rem;
+  border-radius: 50%;
+  border: 0.0267rem solid #ccc;
+  background: url(../images/code5.png) no-repeat center;
+  background-size: cover;
+}
+.sidebar .bar_user .user_name {
+  display: block;
+  font-size: 0.4rem;
+  font-weight: 500;
+  margin: 0.2667rem;
+}
+.sidebar .bar_user .user_text {
+  font-size: 0.32rem;
+}
+.sidebar .bar_nav .bar_active .bar_link {
+  border-radius: 0.16rem;
+  background-color: #e9ecef;
+}
+.sidebar .bar_nav .bar_ul {
+  width: 100%;
+  height: 100%;
+}
+.sidebar .bar_nav .bar_header {
+  background: transparent;
+  color: #adb5bd;
+  font-size: 0.32rem;
+  font-weight: 500;
+  padding: 0.16rem 0.64rem;
+  text-transform: none;
+}
+.sidebar .bar_nav .bar_link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 1.2rem;
+  margin: 0 0.2133rem;
+  padding: 0.2667rem 0.32rem;
+  font-size: 0.4rem;
+}
+.sidebar .bar_nav .bar_link > svg {
+  width: 0.4267rem;
+  height: 0.4rem;
+  margin-right: 0.2133rem;
+}
+.sidebar .bar_nav .bar_link > .direction {
+  position: absolute;
+  width: 0.3733rem;
+  height: 0.3733rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.2667rem;
+}
+.sidebar .bar_nav .bar_link:hover {
+  color: inherit;
+}
+.sidebar .bar_nav .drop_items {
+  height: 0.8267rem;
+  margin: 0.1067rem 0.2133rem;
+  padding: 0.16rem 0.16rem 0.16rem 1.0667rem;
+  line-height: 0.8267rem;
+  color: #212529;
+  font-size: 0.36rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sidebar .bar_nav .drop_items:last-child {
+  margin-bottom: 0.4rem;
+}
+
+.main {
+  z-index: 10;
+}
+.main .m_navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 0.4267rem;
+  width: 100%;
+  height: 1.7333rem;
+}
+.main .m_navbar .m_open {
+  cursor: pointer;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.4rem;
+}
+.main .m_navbar .m_search {
+  width: 5.3333rem;
+  height: 0.8rem;
+  border: 0.0267rem solid #ccc;
+  border-radius: 0.5333rem;
+  padding: 0 0.5333rem;
+  font-size: 0.3733rem;
+  color: #e6e6e6;
+}
+.main .m_navbar .m_search::placeholder {
+  color: rgba(241, 241, 241, 0.664);
+}
+.main .m_navbar .m_function {
+  margin-left: auto;
+  margin-right: 0.5333rem;
+}
+.main .m_navbar .m_function > svg {
+  cursor: pointer;
+  width: 0.6667rem;
+  height: 0.6667rem;
+  margin: 0 0.32rem;
+}
+.main .m_content {
+  margin: 1.28rem 1.92rem 0;
+}
+.main .m_content .m_title > p {
+  font-size: 0.6933rem;
+  color: white;
+}
+.main .m_content .m_title > span {
+  display: block;
+  color: #d8d8d8;
+  font-size: 0.3733rem;
+  margin-top: 0.4rem;
+}
+
+/*# sourceMappingURL=memory.css.map */
