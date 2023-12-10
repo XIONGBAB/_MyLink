@@ -208,6 +208,5 @@ body {
 }
 
 .main .m_footer {
-  width: 100%;
-  height: 2.1333rem;
+  position: absolute;
 }
